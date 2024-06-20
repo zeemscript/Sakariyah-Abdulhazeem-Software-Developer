@@ -39,9 +39,9 @@
         </div>
         <nav>
           <ul>
-            <li><a href="#intro">About</a></li>
-            <li><a href="#work">Experience</a></li>
-            <li><a href="#about">Work</a></li>
+            <li><a href="#firsttalk">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#work">Work</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -50,7 +50,7 @@
       <!-- Main -->
       <div id="main">
         <!-- Intro -->
-        <article id="intro">
+        <article id="firsttalk">
           <h2 class="major">About</h2>
           <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
           <p>
@@ -65,8 +65,8 @@
           </p>
         </article>
 
-        <!-- Work -->
-        <article id="work">
+        <!-- Experience-->
+        <article id="experience">
           <h2 class="major">Experience</h2>
           <span class="image main"
             ><img src="images/mylogo.jpeg" alt="" height="200px"
@@ -95,8 +95,29 @@
               <!-- Add more bullet points as needed -->
             </ul>
           </div>
-
           <!-- Experience item 2 -->
+          <div class="experience-item">
+            <h3>Software developer</h3>
+            <h4>Walkmetru.io, UK, LONDON,</h4>
+            <p class="date">Month Year - Month Year</p>
+            <ul>
+              <li>
+                Assisted in the development of user interfaces for web
+                applications using HTML, CSS, and JavaScript.
+              </li>
+              <li>
+                Participated in code reviews and provided feedback to improve
+                code quality and maintainability.
+              </li>
+              <li>
+                Worked closely with senior developers to learn best practices
+                and enhance technical skills.
+              </li>
+              <!-- Add more bullet points as needed -->
+            </ul>
+          </div>
+
+          <!-- Experience item 3 -->
           <div class="experience-item">
             <h3>Frontend Developer Intern</h3>
             <h4>ZeemRoyals, Lagos Nigeria</h4>
@@ -120,7 +141,7 @@
         </article>
 
         <!-- About -->
-        <article id="about">
+        <article id="work">
           <h2 class="major">Work</h2>
           <span class="image main"><img src="images/pic03.jpg" alt="" /></span>
           <p>
@@ -136,39 +157,59 @@
         <!-- Contact -->
         <article id="contact">
           <h2 class="major">Contact</h2>
-        <!-- Your HTML content -->
+          <!-- Your HTML content -->
 
-<form class="needs-validation" novalidate>
-  <div class="fields">
-    <div class="field half">
-      <label for="name" class="form-label">Name</label>
-      <input type="text" name="name" id="name" class="form-control" required />
-      <div class="valid-feedback">Looks good!</div>
-      <div class="invalid-feedback">Please enter your name.</div>
-    </div>
-    <div class="field half">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" name="email" id="email" class="form-control" required />
-      <div class="valid-feedback">Looks good!</div>
-      <div class="invalid-feedback">Please enter a valid email address.</div>
-    </div>
-    <div class="field">
-      <label for="message" class="form-label">Message</label>
-      <textarea name="message" id="message" rows="4" class="form-control" required></textarea>
-      <div class="valid-feedback">Looks good!</div>
-      <div class="invalid-feedback">Please enter a message.</div>
-    </div>
-  </div>
-  <ul class="actions">
-    <button class="btn" type="submit">Send Message</button>
-    <li><input type="reset" class="btn btn-secondary" value="Reset" /></li>
-  </ul>
-</form>
+          <form class="needs-validation" novalidate>
+            <div class="fields">
+              <div class="field half">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="field half">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">
+                  Please enter a valid email address.
+                </div>
+              </div>
+              <div class="field">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  class="form-control"
+                  required
+                ></textarea>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter a message.</div>
+              </div>
+            </div>
+            <ul class="actions">
+              <button class="btn" type="submit">Send Message</button>
+              <li>
+                <input type="reset" class="btn btn-secondary" value="Reset" />
+              </li>
+            </ul>
+          </form>
 
-<!-- Your HTML content continues -->
+          <!-- Your HTML content continues -->
 
-              
-              
           <ul class="icons">
             <li>
               <a
@@ -220,7 +261,7 @@
     <div id="bg"></div>
 
     <!-- Scripts -->
-
+<script src="index.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
@@ -231,7 +272,7 @@
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
+    
 
     <script
       type="text/javascript"
