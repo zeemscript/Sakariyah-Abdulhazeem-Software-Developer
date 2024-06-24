@@ -1,5 +1,50 @@
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+function sendEmail() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+  const submitBtn = document.getElementById("submitBtn");
 
+  // Change button text to "Sending..."
+  submitBtn.textContent = "Sending...";
+  submitBtn.disabled = true;
+
+  emailjs
+    .send("service_rncemxa", "contact_form", {
+      from_name: name,
+      email_id: email,
+      message: message,
+    })
+    .then((res) => {
+      document.getElementById("form").reset(); // Reset the form after successful submission
+      submitBtn.textContent = "Send Message"; // Reset button text
+      submitBtn.disabled = false;
+      // Remove validation classes after successful submission
+      document
+        .querySelector(".needs-validation")
+        .classList.remove("was-validated");
+
+      // Show success toast
+      const successToast = new bootstrap.Toast(
+        document.getElementById("successToast"),
+        { delay: 10000 }
+      );
+      successToast.show();
+    })
+    .catch((err) => {
+      console.log(err);
+      submitBtn.textContent = "Send Message"; // Reset button text
+      submitBtn.disabled = false;
+
+      // Show error toast
+      const errorToast = new bootstrap.Toast(
+        document.getElementById("errorToast"),
+        { delay: 10000 }
+      );
+      errorToast.show();
+    });
+}
+
+// Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
   "use strict";
   window.addEventListener(
@@ -8,13 +53,16 @@
       // Fetch all the forms we want to apply custom Bootstrap validation styles to
       const forms = document.getElementsByClassName("needs-validation");
       // Loop over them and prevent submission
-      const validation = Array.prototype.filter.call(forms, function (form) {
+      Array.prototype.filter.call(forms, function (form) {
         form.addEventListener(
           "submit",
           function (event) {
             if (form.checkValidity() === false) {
               event.preventDefault();
               event.stopPropagation();
+            } else {
+              event.preventDefault();
+              sendEmail();
             }
             form.classList.add("was-validated");
           },
@@ -25,36 +73,6 @@
     false
   );
 })();
-
-// emailjs message sending code
-function sendEmail() {
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
-
-  emailjs
-    .send("service_rncemxa", "contact_form", {
-      from_name: name,
-      email_id: email,
-      message: message,
-    })
-    .then((res) => {
-      alert("Success!, your message was sent successfully.");
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("message").value = "";
-    })
-    .catch((err) => {
-      alert("Oh no error sending message.");
-      console.log(`FAIL! ${err.message}`);
-    });
-}
-
-const form = document.getElementById("form");
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  sendEmail();
-});
 
 function date() {
   const date = new Date();

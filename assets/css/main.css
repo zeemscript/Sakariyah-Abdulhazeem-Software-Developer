@@ -1690,3 +1690,6 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+.toast {
+  transition: opacity 0.5s ease-in-out;
+}
