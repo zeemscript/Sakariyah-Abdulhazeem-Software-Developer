@@ -40,6 +40,7 @@
         <nav>
           <ul>
             <li><a href="#firsttalk">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -54,15 +55,50 @@
           <h2 class="major">About</h2>
           <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
           <p>
-            Hello! I'm Abdulhazeem 🤓, a software engineer based in Nigeria 🇳🇬.
-            I have over 7 months of experience, learning, exploring, teaching
-            and leading engineering teams to build applications and solutions
-            that span across several sectors for small businesses and
-            enterprise. I'm always motivated to build or lead people to come up
-            with what users will love and will satisfy business requirements. I
-            am dynamic in my operations and I'm always yearning to make an
-            impact with every line of code.
+            Sure! Here’s a polished version of your text: Hello! I'm Abdulhazeem
+            🤓, a software engineer based in Nigeria 🇳🇬. With over 7 months of
+            experience in the tech world of web development, I am passionate
+            about building seamless digital experiences. I thrive on solving
+            complex problems and continuously learning new tools and techniques.
+            Skilled in both front-end and back-end technologies, I enjoy
+            creating digital experiences from concept to deployment. With a keen
+            eye for detail and a commitment to continuous learning, I strive to
+            deliver high-quality solutions that meet client needs and exceed
+            expectations.
+
+            <br /><span
+              >I'm always yearning to make an impact with every line of
+              code.</span
+            >
           </p>
+        </article>
+        <!---------skills ------>
+        <article id="skills">
+          <h2 class="major">Skills</h2>
+          <span>a short text for preamble</span>
+          <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
+          <span>Frontend development</span>
+          <ul>
+            <li>Html5</li>
+            <li>Css3</li>
+            <li>JavaScript</li>
+            <li>Typescript</li>
+            <li>Reactjs</li>
+            <li>Bootstrap</li>
+            <li>Tailwind css</li>
+            <li>Nextjs</li>
+          </ul>
+          <span>Backend development</span>
+          <ul>
+            <li>Nodejs</li>
+            <li>Expressjs</li>
+            <li>MongoDb</li>
+          </ul>
+          <span>Version Control</span>
+          <ul>
+            <li>Git</li>
+            <li>Github</li>
+          </ul>
         </article>
 
         <!-- Experience-->
@@ -71,35 +107,11 @@
           <span class="image main"
             ><img src="images/mylogo.jpeg" alt="" height="200px"
           /></span>
-          <div class="experience-item">
-            <h3>Software Engineer</h3>
-            <h4>Google, California</h4>
-            <p class="date">1667</p>
-            <ul>
-              <li>
-                Led the development and maintenance of web applications,
-                utilizing technologies such as HTML, CSS, JavaScript, and React.
-              </li>
-              <li>
-                Collaborated with cross-functional teams to deliver high-quality
-                software solutions within tight deadlines.
-              </li>
-              <li>
-                Implemented responsive design principles to ensure optimal user
-                experience across various devices.
-              </li>
-              <li>
-                Identified and resolved technical issues, ensuring the stability
-                and performance of applications.
-              </li>
-              <!-- Add more bullet points as needed -->
-            </ul>
-          </div>
           <!-- Experience item 2 -->
           <div class="experience-item">
             <h3>Software developer</h3>
-            <h4>Walkmetru.io, UK, LONDON,</h4>
-            <p class="date">Month Year - Month Year</p>
+            <h4>Walkmetru.io UK, LONDON.</h4>
+            <p class="date">2024</p>
             <ul>
               <li>
                 Assisted in the development of user interfaces for web
@@ -113,6 +125,7 @@
                 Worked closely with senior developers to learn best practices
                 and enhance technical skills.
               </li>
+              <li>Assisited in building of the landing page.</li>
               <!-- Add more bullet points as needed -->
             </ul>
           </div>
@@ -121,19 +134,16 @@
           <div class="experience-item">
             <h3>Frontend Developer Intern</h3>
             <h4>ZeemRoyals, Lagos Nigeria</h4>
-            <p class="date">Month Year - Month Year</p>
+            <p class="date">2023</p>
             <ul>
               <li>
-                Assisted in the development of user interfaces for web
-                applications using HTML, CSS, and JavaScript.
+              I build performant applications and write maintainable code for business across sectors.
               </li>
               <li>
-                Participated in code reviews and provided feedback to improve
-                code quality and maintainability.
+               I manage a diverse tech team ranging from creative designers to Frontend, Backend and Fullstack Engineers.
               </li>
               <li>
-                Worked closely with senior developers to learn best practices
-                and enhance technical skills.
+             I manage stakeholders and company clients, communicating progress and development promptly.
               </li>
               <!-- Add more bullet points as needed -->
             </ul>
@@ -267,28 +277,49 @@
     <!-- BG -->
     <div id="bg"></div>
 
-      
-  <!-- Toast Container -->
-  <div class="toast-container">
-    <!-- Success Toast -->
-    <div id="successToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="d-flex">
-        <div class="toast-body">
-          Success! Your message was sent successfully.
+    <!-- Toast Container -->
+    <div class="toast-container">
+      <!-- Success Toast -->
+      <div
+        id="successToast"
+        class="toast align-items-center text-white bg-success border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            Success! Your message was sent successfully.
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
         </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <!-- Error Toast -->
+      <div
+        id="errorToast"
+        class="toast align-items-center text-white bg-danger border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            Oh no, there was an error sending the message.
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
       </div>
     </div>
-    <!-- Error Toast -->
-    <div id="errorToast" class="toast align-items-center text-white bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="d-flex">
-        <div class="toast-body">
-          Oh no, there was an error sending the message.
-        </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-      </div>
-    </div>
-  </div>
     <!-- Scripts -->
     <script src="index.js"></script>
     <script src="assets/js/jquery.min.js"></script>
