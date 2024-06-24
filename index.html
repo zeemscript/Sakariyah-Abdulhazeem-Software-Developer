@@ -55,13 +55,13 @@
           <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
           <p>
             Hello! I'm Abdulhazeem 🤓, a software engineer based in Nigeria 🇳🇬.
-            I have over 7 months of experience, learning, exploring, teaching and
-            leading engineering teams to build applications and solutions that
-            span across several sectors for small businesses and enterprise. I'm
-            always motivated to build or lead people to come up with what users
-            will love and will satisfy business requirements. I am dynamic in my
-            operations and I'm always yearning to make an impact with every line
-            of code.
+            I have over 7 months of experience, learning, exploring, teaching
+            and leading engineering teams to build applications and solutions
+            that span across several sectors for small businesses and
+            enterprise. I'm always motivated to build or lead people to come up
+            with what users will love and will satisfy business requirements. I
+            am dynamic in my operations and I'm always yearning to make an
+            impact with every line of code.
           </p>
         </article>
 
@@ -157,78 +157,61 @@
         <!-- Contact -->
         <article id="contact">
           <h2 class="major">Contact</h2>
-<form class="needs-validation" id="form" novalidate>
-  <div class="fields">
-    <div class="field half">
-      <label for="name" class="form-label">Name</label>
-      <input
-        type="text"
-        name="name"
-        id="name"
-        class="form-control"
-        required
-      />
-      <div class="valid-feedback">Looks good!</div>
-      <div class="invalid-feedback">Please enter your name.</div>
-    </div>
-    <div class="field half">
-      <label for="email" class="form-label">Email</label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        class="form-control"
-        required
-      />
-      <div class="valid-feedback">Looks good!</div>
-      <div class="invalid-feedback">Please enter a valid email address.</div>
-    </div>
-    <div class="field">
-      <label for="message" class="form-label">Message</label>
-      <textarea
-        name="message"
-        id="message"
-        rows="4"
-        class="form-control"
-        required
-      ></textarea>
-      <div class="valid-feedback">Looks good!</div>
-      <div class="invalid-feedback">Please enter a message.</div>
-    </div>
-  </div>
-  <ul class="actions">
-    <button class="btn btn-success" id="submitBtn" type="submit" style="margin-left: 17px;">Send Message</button>
-    <li>
-      <input type="reset" class="btn btn-secondary" value="Reset" />
-    </li>
-  </ul>
-</form>
-<!-- Toast Container -->
-<div aria-live="polite" aria-atomic="true" class="position-relative" style="min-height: 200px;">
-  <!-- Position it -->
-  <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 11">
-    <!-- Success Toast -->
-    <div id="successToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="d-flex">
-        <div class="toast-body">
-          Success! Your message was sent successfully.
-        </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-      </div>
-    </div>
-    <!-- Error Toast -->
-    <div id="errorToast" class="toast align-items-center text-white bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="d-flex">
-        <div class="toast-body">
-          Oh no, there was an error sending the message.
-        </div>
-        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
+          <form class="needs-validation" id="form" novalidate>
+            <div class="fields">
+              <div class="field half">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="form-control"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+              <div class="field half">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  required
+                />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">
+                  Please enter a valid email address.
+                </div>
+              </div>
+              <div class="field">
+                <label for="message" class="form-label">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="4"
+                  class="form-control"
+                  required
+                ></textarea>
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please enter a message.</div>
+              </div>
+            </div>
+            <ul class="actions">
+              <button
+                class="btn btn-success"
+                id="submitBtn"
+                type="submit"
+                style="margin-left: 17px"
+              >
+                Send Message
+              </button>
+              <li>
+                <input type="reset" class="btn btn-secondary" value="Reset" />
+              </li>
+            </ul>
+          </form>
 
           <!-- Your HTML content continues -->
 
@@ -257,7 +240,7 @@
                 ><span class="label">Instagram</span></a
               >
             </li>
-             <li>
+            <li>
               <a
                 href="https://www.linkedin.com/in/sakariyah-abdulhazeem-85b2b3315/"
                 class="icon brands fa-linkedin"
@@ -265,7 +248,7 @@
                 ><span class="label">LinkedIn</span></a
               >
             </li>
-             <li>
+            <li>
               <a
                 href="https://wa.me/2347086026673"
                 class="icon brands fa-whatsapp"
@@ -290,16 +273,73 @@
         </article>
       </div>
 
+      <!-- Toast Container -->
+      <div
+        aria-live="polite"
+        aria-atomic="true"
+        class="position-relative"
+        style="min-height: 200px"
+      >
+        <!-- Position it -->
+        <div
+          class="toast-container position-fixed top-0 end-0 p-3"
+          style="z-index: 11"
+        >
+          <!-- Success Toast -->
+          <div
+            id="successToast"
+            class="toast align-items-center text-white bg-success border-0"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
+            <div class="d-flex">
+              <div class="toast-body">
+                Success! Your message was sent successfully.
+              </div>
+              <button
+                type="button"
+                class="btn-close btn-close-white me-2 m-auto"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+          <!-- Error Toast -->
+          <div
+            id="errorToast"
+            class="toast align-items-center text-white bg-danger border-0"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+          >
+            <div class="d-flex">
+              <div class="toast-body">
+                Oh no, there was an error sending the message.
+              </div>
+              <button
+                type="button"
+                class="btn-close btn-close-white me-2 m-auto"
+                data-bs-dismiss="toast"
+                aria-label="Close"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Footer -->
       <footer id="footer">
-        <p class="copyright">&copy; <span id="date"> </span> Developed by Abdulhazeem.</p>
+        <p class="copyright">
+          &copy; <span id="date"> </span> Developed by Abdulhazeem.
+        </p>
       </footer>
     </div>
     <!-- BG -->
     <div id="bg"></div>
 
     <!-- Scripts -->
-<script src="index.js"></script>
+    <script src="index.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
@@ -310,7 +350,6 @@
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
-    
 
     <script
       type="text/javascript"
