@@ -49,3 +49,20 @@ function sendEmail() {
       // Handle error response
     });
 }
+
+
+
+
+const form = document.getElementById("form")
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  sendEmail();
+})
+
+
+function date() {
+  const date = new Date();
+  const year = date.getFullYear();
+  document.getElementById("date").innerHTML = year;
+}
+date(); 
