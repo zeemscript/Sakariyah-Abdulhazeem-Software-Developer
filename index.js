@@ -39,30 +39,26 @@ function sendEmail() {
       message: message,
     })
     .then((res) => {
-      alert("Success!");
-      console.log(`SUCCESS! ${res.status}`);
-      // Handle success response
+      alert("Success!, your message was sent successfully.");
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
     })
     .catch((err) => {
-      alert("Error");
+      alert("Oh no error sending message.");
       console.log(`FAIL! ${err.message}`);
-      // Handle error response
     });
 }
 
-
-
-
-const form = document.getElementById("form")
+const form = document.getElementById("form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   sendEmail();
-})
-
+});
 
 function date() {
   const date = new Date();
   const year = date.getFullYear();
   document.getElementById("date").innerHTML = year;
 }
-date(); 
+date();

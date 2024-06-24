@@ -462,6 +462,7 @@ input, select, textarea {
 
 	textarea {
 		padding: 0.75rem 1rem;
+		background-color: transparent;
 	}
 
 	input[type="checkbox"],
