@@ -3,9 +3,12 @@ function sendEmail() {
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
   const submitBtn = document.getElementById("submitBtn");
+  const spinner = document.getElementById("spinner");
+  const buttonText = document.getElementById("buttonText");
 
-  // Change button text to "Sending..."
-  submitBtn.textContent = "Sending...";
+  // Show spinner and change button text to "Sending..."
+  spinner.style.display = "inline-block";
+  buttonText.textContent = "Sending...";
   submitBtn.disabled = true;
 
   emailjs
@@ -16,8 +19,10 @@ function sendEmail() {
     })
     .then((res) => {
       document.getElementById("form").reset(); // Reset the form after successful submission
-      submitBtn.textContent = "Send Message"; // Reset button text
+      buttonText.textContent = "Send Message"; // Reset button text
       submitBtn.disabled = false;
+      spinner.style.display = "none"; // Hide spinner
+
       // Remove validation classes after successful submission
       document
         .querySelector(".needs-validation")
@@ -32,8 +37,9 @@ function sendEmail() {
     })
     .catch((err) => {
       console.log(err);
-      submitBtn.textContent = "Send Message"; // Reset button text
+      buttonText.textContent = "Send Message"; // Reset button text
       submitBtn.disabled = false;
+      spinner.style.display = "none"; // Hide spinner
 
       // Show error toast
       const errorToast = new bootstrap.Toast(

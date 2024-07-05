@@ -291,13 +291,31 @@
                 <div class="invalid-feedback">Please enter a message.</div>
               </div>
             </div>
+            <!-- <ul class="actions">
+              <button
+                class="btn btn-success mx-sm-3 "
+                id="submitBtn"
+                type="submit"
+              >
+              <span class="spinner-border spinner-border-sm"></span>
+                Send Message
+              </button>
+              <li>
+                <input type="reset" class="btn btn-secondary" value="Reset" />
+              </li>
+            </ul> -->
             <ul class="actions">
               <button
                 class="btn btn-success mx-sm-3"
                 id="submitBtn"
                 type="submit"
               >
-                Send Message
+                <span
+                  class="spinner-border spinner-border-sm"
+                  id="spinner"
+                  style="display: none"
+                ></span>
+                <span id="buttonText">Send Message</span>
               </button>
               <li>
                 <input type="reset" class="btn btn-secondary" value="Reset" />
